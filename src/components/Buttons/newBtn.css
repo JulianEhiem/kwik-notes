@@ -1,0 +1,15 @@
+.newBtnContainer {
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+.newBtn {
+  background: rgb(50, 173, 50);
+  color: white;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 5px;
+}

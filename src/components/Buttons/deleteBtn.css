@@ -1,0 +1,15 @@
+.deleteBtnContainer {
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+.deleteBtn {
+  background: rgb(241, 58, 58);
+  color: #fff;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 5px;
+}

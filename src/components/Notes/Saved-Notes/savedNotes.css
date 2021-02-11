@@ -1,0 +1,42 @@
+.savedNotesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(121, 120, 120, 0.1);
+  width: 450px;
+  height: 450px;
+  overflow-y: scroll;
+  margin-left: 10vw;
+  box-sizing: content-box;
+  border-radius: 10px;
+}
+.peekMessage {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.4rem;
+  width: 280px;
+}
+.savedMessage {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 95%;
+  max-width: 400px;
+  margin: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 10px;
+}
+.timeBoxSaved {
+  display: inline-flex;
+  justify-content: start;
+  color: green;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.savedComments{
+  width: 220px;
+  color: gray;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+

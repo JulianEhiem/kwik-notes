@@ -1,0 +1,15 @@
+.tinyEditContainer {
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2rem;
+    margin-left: 1rem;
+  }
+  .tinyEdit {
+    background: rgb(147, 186, 196);
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }

@@ -1,0 +1,15 @@
+.saveBtnContainer {
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.2rem;
+  margin-left: 1rem;
+}
+.saveBtn {
+  background: #4096D5;
+  color: #fff;
+  padding: 0.65rem;
+  border: none;
+  border-radius: 5px;
+}

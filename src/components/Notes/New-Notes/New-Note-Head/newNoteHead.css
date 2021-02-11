@@ -1,0 +1,17 @@
+.newNotesHeadContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(189, 189, 189, 0.6);
+  padding: 0.2rem;
+  width: 380px;
+  height: 65px;
+  box-sizing: border-box;
+}
+.time-box {
+  padding-left: 0.75rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: rgb(49, 49, 49);
+  
+}
