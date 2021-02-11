@@ -18,7 +18,7 @@ export default function SavedNotes(props) {
             <div className="peekMessage">
               <h3 className="timeBoxSaved">{note.time}</h3>
               <h3 className="savedComments">
-                <i>{note.message}</i>
+                <i>{(note.message.length >= 15)?(note.message.substr(0, 15) + "..."):note.message}</i>
               </h3>
             </div>
             <TinyEdit />

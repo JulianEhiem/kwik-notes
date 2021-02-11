@@ -3,22 +3,36 @@ import AppTitle from "../Header/AppTitle";
 import NewNotes from "../Notes/New-Notes/NewNotes";
 import SavedNotes from "../Notes/Saved-Notes/SavedNotes";
 import { useState } from "react";
+import { produce } from "immer";
 
 function App() {
-  const initialData = [
-    { time: "02-01-2021  7:15am", message: "First message" },
-    { time: "02-05-2021  6:55am", message: "Second message" },
-    { time: "02-12-2021  1:12pm", message: "Third message" },
-    { time: "02-13-2021  7:45pm", message: "Fourth message" },
-    { time: "02-13-2021  11:19am", message: "Fifth message" },
-    { time: "02-19-2021  2:23pm", message: "Sixth message" }]
-// const initialData = [];
+  // const initialData = [
+  //   { time: "02-01-2021  7:15am", message: "First message" },
+  //   { time: "02-05-2021  6:55am", message: "Second message" },
+  //   { time: "02-12-2021  1:12pm", message: "Third message" },
+  //   { time: "02-13-2021  7:45pm", message: "Fourth message" },
+  //   { time: "02-13-2021  11:19am", message: "Fifth message" },
+  //   { time: "02-19-2021  2:23pm", message: "Sixth message" }]
+const initialData = [];
   const [data, setData] = useState(initialData);
+
+  const handleClick = () => {
+    const message = document.querySelector("#noteText").value.trim();
+    if (message) {
+      const nextState = produce(data, (draftState) => {
+        draftState.push({ message });
+      });
+      document.querySelector("#noteText").value = "";
+
+      setData(nextState);
+      console.log(nextState)
+    }
+  };
 
   return (
     <div className="appContainer">
       <AppTitle />
-      <NewNotes />
+      <NewNotes onsave1 = {handleClick}/>
       <SavedNotes data = {data}/>
     </div>
   );
