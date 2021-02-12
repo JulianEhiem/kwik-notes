@@ -18,7 +18,8 @@ const initialData = [];
   let today = new Date();
   // let date = today.getMonth()+ 1 + '-' + today.getDate()+ "-" + today.getFullYear()
   let date = today.toLocaleDateString()
-  let time = (today.getHours() > 12 ?today.getHours() - 12:today.getHours())+':'+today.getMinutes() + (today.getHours >= 12? "am":"pm");
+  // let time = (today.getHours() > 12 ?today.getHours() - 12:today.getHours())+':'+today.getMinutes() + (today.getHours >= 12? "am":"pm");
+  let time = today.toLocaleTimeString();
   let dateTime = date + ' ' + time;
 
   const handleClick = () => {
@@ -33,14 +34,25 @@ const initialData = [];
 
       setData(nextState);
     }
+  
   };
+  const displayTouch = (e) => {
+    console.log(e)
+  }
+
+  const handleDelete = () => {
+    // alert("you clicked me!")
+    // console.log(data.findIndex(this.message))
+    let e = document.querySelector(".tinyDelete");
+    console.log(displayTouch(e.target.class))
+  }
 
 
   return (
     <div className="appContainer">
       <AppTitle />
-      <NewNotes onsave1 = {handleClick}/>
-      <SavedNotes data = {data}/>
+      <NewNotes onsave1 = {handleClick} />
+      <SavedNotes data = {data} ondelete1 = {handleDelete}/>
     </div>
   );
 }

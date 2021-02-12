@@ -3,6 +3,8 @@ import TinyEdit from "../../Buttons/TinyEdit";
 import "./savedNotes.css";
 
 export default function SavedNotes(props) {
+
+  let ondelete2 = props.ondelete1;
   return (
     
     <div className="savedNotesContainer">
@@ -22,7 +24,7 @@ export default function SavedNotes(props) {
               </h3>
             </div>
             <TinyEdit />
-            <TinyDelete />
+            <TinyDelete ondelete3 = {ondelete2} />
           </div>
         ))
       )}
