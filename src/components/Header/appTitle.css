@@ -11,9 +11,9 @@
 }
 .title {
   display: inline;
-  color: rgb(23, 45, 143);
+  color: rgb(59, 59, 59);
   padding: 1rem;
   font-size: 2.7rem;
   line-height: 2.9rem;
-  /* background: rgb(81, 81, 255); */
+  background: url('../../crumpled2.png');
 }
