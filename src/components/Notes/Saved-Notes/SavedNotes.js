@@ -2,15 +2,14 @@ import TinyDelete from "../../Buttons/TinyDelete";
 import TinyEdit from "../../Buttons/TinyEdit";
 import "./savedNotes.css";
 
-export default function SavedNotes(props) {
+export default function SavedNotes() {
 
-  let ondelete2 = props.ondelete1;
   return (
     
     <div className="savedNotesContainer">
       <h2>Saved Notes</h2>
 
-      {props.data.length === 0 ? (
+      {/* {props.data.length === 0 ? (
         <h3>
           <i>No saved messages</i>
         </h3>
@@ -24,10 +23,10 @@ export default function SavedNotes(props) {
               </h3>
             </div>
             <TinyEdit />
-            <TinyDelete ondelete3 = {ondelete2} />
+            <TinyDelete  />
           </div>
         ))
-      )}
+      )} */}
     </div>
   );
 }

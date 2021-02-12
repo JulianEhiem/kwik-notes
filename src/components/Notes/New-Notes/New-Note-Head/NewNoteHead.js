@@ -2,8 +2,7 @@ import "./newNoteHead.css";
 import SaveButton from "../../../Buttons/SaveButton";
 import DeleteButton from "../../../Buttons/DeleteButton";
 
-export default function NewNoteHead(props) {
-  let onsave4 = props.onsave3;
+export default function NewNoteHead() {
   let today = new Date;
   // let date = today.getMonth()+ 1 + '-' + today.getDate()+ "-" + today.getFullYear()
   let date = today.toLocaleDateString()
@@ -13,7 +12,7 @@ export default function NewNoteHead(props) {
   return (
     <div className="newNotesHeadContainer">
   <h3 id = "createdAt"className="time-box">{dateTime}</h3>
-      <SaveButton onsave5 = {onsave4}/>
+      <SaveButton />
       <DeleteButton />
     </div>
   );
