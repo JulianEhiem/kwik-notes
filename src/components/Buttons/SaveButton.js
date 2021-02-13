@@ -1,14 +1,15 @@
 import { useContext } from "react";
 import { NotesContext } from "../App/NotesContext";
 import "./saveBtn.css";
-// import NotesContext from "../App/NotesContext";
+// import { produce } from "immer";
 
 export default function SaveButton() {
-const { handleClick } = useContext(NotesContext)
+
+  const {handleSave} = useContext(NotesContext);
 
   return (
     <div className="saveBtnContainer">
-      <button className="saveBtn" onClick={handleClick} >
+      <button className="saveBtn" onClick ={handleSave} >
         Save <i className="fas fa-save"></i>
       </button>
     </div>

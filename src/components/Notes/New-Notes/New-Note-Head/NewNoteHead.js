@@ -1,14 +1,13 @@
 import "./newNoteHead.css";
 import SaveButton from "../../../Buttons/SaveButton";
 import DeleteButton from "../../../Buttons/DeleteButton";
+import { useContext } from 'react';
+import { NotesContext } from "../../../App/NotesContext";
 
 export default function NewNoteHead() {
-  let today = new Date;
-  // let date = today.getMonth()+ 1 + '-' + today.getDate()+ "-" + today.getFullYear()
-  let date = today.toLocaleDateString()
-  // let time = (today.getHours() > 12 ?today.getHours() - 12:today.getHours())+':'+today.getMinutes() + (today.getHours < 13? "am":"pm");
-  let time = today.toLocaleTimeString()
-  let dateTime = date + ' - ' + time;
+  
+  const {dateTime} = useContext(NotesContext);
+  
   return (
     <div className="newNotesHeadContainer">
   <h3 id = "createdAt"className="time-box">{dateTime}</h3>

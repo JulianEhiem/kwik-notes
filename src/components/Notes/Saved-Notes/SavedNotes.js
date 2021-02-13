@@ -1,21 +1,24 @@
 import TinyDelete from "../../Buttons/TinyDelete";
 import TinyEdit from "../../Buttons/TinyEdit";
+import { useContext } from 'react';
 import "./savedNotes.css";
+
+import { NotesContext } from "../../App/NotesContext";
 
 export default function SavedNotes() {
 
+  const {data} = useContext(NotesContext)
+
   return (
-    
     <div className="savedNotesContainer">
       <h2>Saved Notes</h2>
-
-      {/* {props.data.length === 0 ? (
+      {data.length === 0 ? (
         <h3>
           <i>No saved messages</i>
         </h3>
       ) : (
-        props.data.map((note) => (
-          <div className="savedMessage">
+        data.map((note) => (
+          <div className="savedMessage" id = {note.id}>
             <div className="peekMessage">
               <h3 className="timeBoxSaved">{note.time}</h3>
               <h3 className="savedComments">
@@ -26,7 +29,7 @@ export default function SavedNotes() {
             <TinyDelete  />
           </div>
         ))
-      )} */}
+      )}
     </div>
   );
 }
