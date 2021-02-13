@@ -15,6 +15,7 @@
   flex-direction: column;
   margin-left: 0.4rem;
   width: 280px;
+  height: fit-content;
 }
 .savedMessage {
   display: flex;
@@ -35,8 +36,14 @@
 }
 .savedComments{
   width: 220px;
+  overflow-wrap: break-word;
   color: gray;
   margin-left: 2rem;
   margin-top: 0;
+}
+
+.empty{
+  font-style: italic;
+  color: rgb(107, 107, 107);
 }
 

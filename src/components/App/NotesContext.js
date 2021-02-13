@@ -1,6 +1,6 @@
 // const { useState, createContext } = require("react")
 
-import { useState, createContext } from 'react';
+import { useState, createContext, useEffect } from 'react';
 
 import { produce } from "immer";
 // import { ProxyTypeSet } from 'immer/dist/internal';
@@ -39,13 +39,35 @@ const NotesContextProvider = (props) =>{
         });
         document.querySelector("#noteText").value = "";
 
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('data', JSON.stringify(nextState));
+          }
+
         setData(nextState);
         }
     }
 
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const getData = localStorage.getItem('data');
+          if (getData !== '' && getData !== null) {
+            return setData(JSON.parse(getData));
+          }
+          return setData([]);
+        }
+      }, 0)
+
     const handleDelete = () => {
          document.querySelector("#noteText").value = "";
     }
+
+    // const handleEdit = (id) => {
+    //     let n = id.target.attributes.id.value;
+
+    //     document.querySelector("#noteText").value = 'x';
+
+    //     handleRemove(id);
+    //   }
 
     // const handleRemove = (id) => {
     //     // const nextState = produce(data, (draftState) => {
@@ -56,6 +78,10 @@ const NotesContextProvider = (props) =>{
     //     // setData(nextState);
     //     // const findId = (e)=>alert(e.target.id)
     //     // findId()
+    // }
+
+    // const onOpen = () -> {
+        
     // }
         
 
