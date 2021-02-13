@@ -1,13 +1,14 @@
 import "./newNotes.css";
 import NewNoteHead from "./New-Note-Head/NewNoteHead";
 import NewNoteBody from "./New-Note-Body/NewNoteBody";
+// import { useState } from "react";
 // import SavedNotes from "../Saved-Notes/SavedNotes";
 
 
 export default function NewNotes() {
 
   return (
-      <div className="newNotesContainer">
+      <div className="newNotesContainer" >
         <NewNoteHead/>
         <NewNoteBody />
      </div>

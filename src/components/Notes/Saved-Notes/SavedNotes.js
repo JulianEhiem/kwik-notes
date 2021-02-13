@@ -34,6 +34,7 @@ export default function SavedNotes() {
   const {data} = useContext(NotesContext)
   // const {handleRemove} = useContext(NotesContext)
 
+  // let newData = data.reverse();
   return (
     <div className="savedNotesContainer">
       <h2>Saved Notes</h2>

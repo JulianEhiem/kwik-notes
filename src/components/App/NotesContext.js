@@ -35,7 +35,7 @@ const NotesContextProvider = (props) =>{
             const id = `note${num}`;
         if (message) {
         const nextState = produce(data, (draftState) => {
-            draftState.push({ id, time , message});
+            draftState.unshift({ id, time , message});
         });
         document.querySelector("#noteText").value = "";
 
