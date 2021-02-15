@@ -1,5 +1,4 @@
 import "./newBtn.css";
-
 import { NotesContext } from "../App/NotesContext";
 import { useContext } from "react";
 

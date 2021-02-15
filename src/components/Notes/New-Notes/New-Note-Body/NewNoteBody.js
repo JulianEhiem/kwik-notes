@@ -7,4 +7,3 @@ export default function NewNoteBody() {
     </div>
   );
 }
- 
