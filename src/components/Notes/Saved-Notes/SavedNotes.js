@@ -89,7 +89,7 @@ const result = data.indexOf(search(n,data))
       <h2>Saved Notes</h2>
       {data.length === 0 ? (
         <h3 className="empty">
-          <i>No saved messages</i>
+          <i>No Saved Messages</i>
         </h3>
       ) : (
         data.map((note) => (
@@ -99,7 +99,7 @@ const result = data.indexOf(search(n,data))
               <h3 className="savedComments">
                 {/* <i>{(note.message.length >= 15)?(note.message.substr(0, 15) + "..."):note.message}</i>
                 <i>{note.message}</i> */}
-                {(!open)?(<i>{(note.message.length >= 15)?(note.message.substr(0, 15) + "..."):note.message}</i>):
+                {(!open)?(<i>{(note.message.length >= 13)?(note.message.substr(0, 13) + "..."):note.message}</i>):
                 <i>{note.message}</i>}
               </h3>
             </div>

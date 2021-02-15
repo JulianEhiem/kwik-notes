@@ -47,3 +47,76 @@
   color: rgb(107, 107, 107);
 }
 
+/* ==============================================================Other Screens=========================================================== */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .savedNotesContainer {
+      width: 90%;
+      height: 30vh;
+      margin-top: 2rem;
+      margin-left: 0;
+      align-self: center;
+    }
+    .peekMessage {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      width: 140px;
+      height: fit-content;
+    }
+    .savedMessage {
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      width: 90%;
+      /* max-width: 260px; */
+      margin: 0.2rem;
+      padding-right: 0;
+      border-radius: 7px;
+    }
+    .timeBoxSaved {
+      display: inline-flex;
+      justify-content: center;
+      color: green;
+      font-size: 0.5rem;
+      margin-left: 0;
+    }
+    .savedComments{
+      width: 110px;
+      align-self: center;
+      margin-left: 0;
+      margin-top: 0;
+      font-size: 0.85rem;
+    }
+    
+    .empty{
+      font-style: italic;
+      color: rgb(107, 107, 107);
+      font-size: 0.9rem;
+    }
+    h2{
+      font-size: 1.2rem;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
+}

@@ -40,3 +40,52 @@
 .appName{
   z-index: 100;
 }
+
+
+/* ==============================================================Other Screens=========================================================== */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .titleContainer {
+      position: relative;
+      justify-content: center;
+      align-self: center;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .titleContainer {
+      justify-content: center;
+    }
+
+    .title {
+      padding: 1.3rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .titleContainer {
+      /* justify-content: center; */
+    }
+
+    .title {
+      padding: 1.3rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+}

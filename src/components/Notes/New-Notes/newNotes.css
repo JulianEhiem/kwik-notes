@@ -1,9 +1,10 @@
 .newNotesContainer {
   display: flexbox;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: #a4d7c4;
+  
   width: fit-content;
-  height: 265px;
+  height: fit-content;
   /* border: 2px solid red; */
   box-shadow: 5px 5px 5px rgba(94, 94, 94, 0.3);
   /* border-radius: 50px; */
@@ -16,4 +17,35 @@
   height: 100vh;
   width: 100vw;
   padding: 2rem;
+}
+
+
+/* ==============================================================Other Screens=========================================================== */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .newNotesContainer {
+      margin-top: 2rem;
+      align-self: center;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
 }

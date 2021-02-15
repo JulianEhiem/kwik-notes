@@ -7,3 +7,41 @@
   width: 100vw;
   padding: 2rem;
 }
+
+/* ==============================================================Other Screens=========================================================== */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .appContainer {
+      display: flex;
+      flex-direction: column;
+      background-color: whitesmoke;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 110vh;
+      width: 100vw;
+      padding: 2rem;
+    }
+    
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
+}
