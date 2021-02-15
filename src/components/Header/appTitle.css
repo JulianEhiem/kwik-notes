@@ -53,6 +53,7 @@
       position: relative;
       justify-content: center;
       align-self: center;
+      width: 300px;
     }
 
 }
