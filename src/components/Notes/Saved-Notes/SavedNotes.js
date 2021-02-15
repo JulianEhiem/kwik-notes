@@ -1,6 +1,8 @@
 import { useContext, useState } from 'react';
 import { produce } from "immer";
 import "./savedNotes.css";
+import "../../Buttons/tinyEdit.css"
+import "../../Buttons/tinyDelete.css"
 import { NotesContext } from "../../App/NotesContext";
 
 export default function SavedNotes() {
